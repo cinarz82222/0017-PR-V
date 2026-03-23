@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.*
+*.log
+
+# Editors
+.vscode/
+.idea/
+
+# Local databases / caches (varsa)
+*.sqlite
+*.db
+*.sqlite3
+/.DS_Store
+

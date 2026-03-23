@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify Kartı</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gotham:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #2f3136; padding: 20px; font-family: 'Gotham', sans-serif; }
+    .spotify-card { width: 600px; height: 220px; background: #121212; border-radius: 16px; display: flex; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+    .album-art { width: 180px; height: 180px; margin: 20px; background: #333; border-radius: 8px; background-size: cover; }
+    .song-details { flex: 1; padding: 20px 25px; color: white; display: flex; flex-direction: column; justify-content: center; }
+    .now-playing { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #1DB954; margin-bottom: 8px; }
+    .song-title { font-size: 28px; font-weight: 700; margin: 0 0 8px; }
+    .artist-name { font-size: 18px; color: #b3b3b3; margin-bottom: 15px; }
+    .progress-bar { height: 6px; background: #535353; border-radius: 3px; margin-bottom: 8px; overflow: hidden; }
+    .progress { height: 100%; background: #1DB954; width: 45%; }
+    .time { display: flex; justify-content: space-between; font-size: 12px; color: #b3b3b3; }
+  </style>
+</head>
+<body>
+  <div class="spotify-card">
+    <div class="album-art" style="background-image:url('https://i.scdn.co/image/ab67616d0000b2732e8ed79e177ff6011076f5f0')"></div>
+    <div class="song-details">
+      <div class="now-playing">Şu anda dinleniyor</div>
+      <div class="song-title">Örnek Şarkı Adı</div>
+      <div class="artist-name">Örnek Sanatçı</div>
+      <div class="progress-bar"><div class="progress"></div></div>
+      <div class="time"><span>2:15</span><span>5:00</span></div>
+    </div>
+  </div>
+</body>
+</html>
